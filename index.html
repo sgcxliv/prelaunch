@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>party — join the waitlist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div class="page-bg" aria-hidden="true"></div>
+
+    <header class="site-nav">
+      <a class="site-nav__logo" href="#waitlist"
+        ><span class="site-nav__logo-mark" aria-hidden="true"></span>party</a
+      >
+      <nav class="site-nav__links" aria-label="Primary">
+        <a href="#about">about</a><span class="site-nav__sep">|</span>
+        <a href="#cohorts">cohorts</a><span class="site-nav__sep">|</span>
+        <a href="#careers">careers</a><span class="site-nav__sep">|</span>
+        <a href="#contact">contact</a>
+      </nav>
+    </header>
+
+    <main class="page-main">
+      <!-- 1: Join / waitlist first (vertical stack) -->
+      <section class="intro" id="waitlist">
+        <div class="intro__inner">
+          <h1 class="intro__headline">
+            <span class="intro__line intro__line--cream"
+              ><span data-city-rotatable>San Francisco</span> is your</span
+            >
+            <span class="intro__line intro__line--orange">playground…</span>
+          </h1>
+          <p class="intro__tag">
+            <span class="intro__accent">join a party.</span>
+            Curated nights out with strangers who become your crew.
+          </p>
+
+          <form class="waitlist" id="waitlist-form" novalidate>
+            <h2 class="waitlist__title">get on the list!</h2>
+            <label for="wl-name">name</label>
+            <input id="wl-name" name="name" type="text" autocomplete="name" placeholder="your name" required />
+            <label for="wl-email">email</label>
+            <input
+              id="wl-email"
+              name="email"
+              type="email"
+              autocomplete="email"
+              placeholder="your best email"
+              required
+            />
+            <label for="wl-phone">phone</label>
+            <input
+              id="wl-phone"
+              name="phone"
+              type="tel"
+              autocomplete="tel"
+              placeholder="phone number"
+            />
+            <button type="submit">join the waitlist</button>
+            <p class="waitlist__note" id="waitlist-feedback" role="status"></p>
+          </form>
+        </div>
+      </section>
+
+      <!-- 2: Story — two panels, vertical (cream then glass) -->
+      <section class="story" id="story" aria-labelledby="story-heading">
+        <h2 id="story-heading" class="visually-hidden">About the experience</h2>
+        <div class="story__stack">
+          <div class="panel-cream">
+            <p><em>be honest.</em> when was the last time you did something</p>
+            <p><span class="hl">spontaneous?</span></p>
+          </div>
+          <div class="panel-glass">
+            <p>
+              join a 10-week season with strangers in
+              <strong><span data-city-rotatable>San Francisco</span></strong
+              >, soon to be your <span class="accent">party.</span>
+            </p>
+            <p>
+              we've curated a series of events for you to start <span class="accent">living</span> again—<span
+                class="accent">just let it happen.</span
+              >
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="anchor-section" id="about">
+        <h2>about</h2>
+        <p>
+          Party is a real-life season in your city: small cohorts, weekly quests, and a little structure so
+          showing up feels easy. Built for people who are tired of the feed and ready for the street.
+        </p>
+      </section>
+
+      <section class="anchor-section" id="cohorts">
+        <h2>cohorts</h2>
+        <p>
+          We run timed seasons in select metros. Join the waitlist above and we’ll place you in the next wave
+          for your city.
+        </p>
+      </section>
+
+      <section class="anchor-section" id="careers">
+        <h2>careers</h2>
+        <p>
+          We're hiring builders who care about hospitality, community, and craft. Reach out at
+          <a href="mailto:careers@party.example">careers@party.example</a> with what you'd like to work on.
+        </p>
+      </section>
+
+      <section class="anchor-section" id="contact">
+        <h2>contact</h2>
+        <p>
+          Questions, partnerships, or press:
+          <a href="mailto:hello@party.example">hello@party.example</a>
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">© party</footer>
+
+    <script src="js/site-config.js"></script>
+    <script src="js/city-rotator.js"></script>
+    <script src="js/waitlist-form.js"></script>
+  </body>
+</html>
